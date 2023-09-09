@@ -10,7 +10,7 @@ set -o errexit -o nounset
 CURL_VERSION=$(curl --version | head -n 1 | cut -d" " -f2)
 
 function curl_req() {
-	curl -v -A "osm-bright-get-shapefiles/1.0 curl/${CURL_VERSION}" --fail --remote-time -L "$@"
+	curl -A "osm-bright-get-shapefiles/1.0 curl/${CURL_VERSION}" --fail --remote-time -L "$@"
 }
 
 cd "$(dirname "$0")/.." || exit

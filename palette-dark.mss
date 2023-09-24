@@ -38,7 +38,7 @@ Map { font-directory: url(./fonts); }
 /* ================================================================== */
 
 @land:              #5a5a5a;
-@water:             #222222;
+@water:             #204360;
 @grass:             #6f826f;
 @beach:             #9f9783;
 @park:              #868686;
@@ -69,7 +69,7 @@ Map { font-directory: url(./fonts); }
  *         inner fill (inline).
  */
 
-@motorway_line:     #dd7d7d;
+@motorway_line:     #943838;
 @motorway_fill:     lighten(@motorway_line,10%);
 @motorway_case:     @motorway_line * 0.9;
 

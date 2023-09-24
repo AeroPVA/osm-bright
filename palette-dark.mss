@@ -37,17 +37,17 @@ Map { font-directory: url(./fonts); }
 /* LANDUSE & LANDCOVER COLORS
 /* ================================================================== */
 
-@land:              #FCFBE7;
-@water:             #C4DFF6;
-@grass:             #E6F2C1;
-@beach:             #FFEEC7;
-@park:              #DAF2C1;
+@land:              #faf9eb;
+@water:             #ccdff0;
+@grass:             #e2ecc6;
+@beach:             #f7ebcf;
+@park:              #d9eac8;
 @cemetery:          #D6DED2;
-@wooded:            #C3D9AD;
-@agriculture:       #F2E8B6;
+@wooded:            #d8dbd7;
+@agriculture:       #e7e1c0;
 
-@building:          #E4E0E0;
-@hospital:          rgb(229,198,195);
+@building:          #e3e3e3;
+@hospital:          #decbc9;
 @school:            #FFF5CC;
 @sports:            #B8E6B8;
 

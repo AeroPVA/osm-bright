@@ -73,15 +73,15 @@ Map { font-directory: url(./fonts); }
 @motorway_fill:     lighten(@motorway_line,10%);
 @motorway_case:     @motorway_line * 0.9;
 
-@trunk_line:        #E68A5C;
+@trunk_line:        #a35229;
 @trunk_fill:        lighten(@trunk_line,10%);
 @trunk_case:        @trunk_line * 0.9;
 
-@primary_line:      #eec779;
+@primary_line:      #b88a2e;
 @primary_fill:      lighten(@primary_line,10%);
 @primary_case:      @primary_line * 0.9;
 
-@secondary_line:    #f6e79e;
+@secondary_line:    #98831b;
 @secondary_fill:    lighten(@secondary_line,10%);
 @secondary_case:    @secondary_line * 0.9;
 
@@ -115,33 +115,33 @@ Map { font-directory: url(./fonts); }
 
 /* We set up a default halo color for places so you can edit them all
    at once or override each individually. */
-@place_halo:        fadeout(#9c9c9c,34%);
+@place_halo:        fadeout(#fff,34%);
 
-@country_text:      #ffffff;
+@country_text:      #435;
 @country_halo:      @place_halo;
 
-@state_text:        #ffffff;
+@state_text:        #546;
 @state_halo:        @place_halo;
 
-@city_text:         #ffffff;
-@city_halo:         #9c9c9c;
+@city_text:         #444;
+@city_halo:         @place_halo;
 
-@town_text:         #d7d7d7;
-@town_halo:         #9c9c9c;
+@town_text:         #666;
+@town_halo:         @place_halo;
 
-@poi_text:          #d7d7d7;
+@poi_text:          #888;
 
-@road_text:         #d7d7d7;
-@road_halo:         #9c9c9c;
+@road_text:         #777;
+@road_halo:         #fff;
 
-@other_text:        #d7d7d7;
+@other_text:        #888;
 @other_halo:        @place_halo;
 
-@locality_text:     #d7d7d7;
+@locality_text:     #aaa;
 @locality_halo:     @land;
 
 /* Also used for other small places: hamlets, suburbs, localities */
-@village_text:      #d7d7d7;
+@village_text:      #888;
 @village_halo:      @place_halo;
 
 /* ****************************************************************** */

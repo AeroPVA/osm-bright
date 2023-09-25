@@ -43,13 +43,13 @@ Map { font-directory: url(./fonts); }
 @beach:             #3c4d61;
 @park:              #94e5ca;
 @cemetery:          #94e5ca;
-@wooded:            #0f2c32;
+@wooded:            #0F2732;
 @agriculture:       #9f8606;
 
 @building:          #a4a4a4;
 @hospital:          #e8c4c0;
-@school:            #7c7c7c;
-@sports:            #6f826f;
+@school:            #e8c4c0;
+@sports:            #94e5ca;
 
 @residential:       @land * 0.98;
 @commercial:        @land * 0.97;
@@ -73,35 +73,35 @@ Map { font-directory: url(./fonts); }
 @motorway_fill:     lighten(@motorway_line,10%);
 @motorway_case:     @motorway_line * 0.9;
 
-@trunk_line:        #a35229;
+@trunk_line:        #8D8996;
 @trunk_fill:        lighten(@trunk_line,10%);
 @trunk_case:        @trunk_line * 0.9;
 
-@primary_line:      #b88a2e;
+@primary_line:      #8B9299;
 @primary_fill:      lighten(@primary_line,10%);
 @primary_case:      @primary_line * 0.9;
 
-@secondary_line:    #98831b;
+@secondary_line:    #8B9299;
 @secondary_fill:    lighten(@secondary_line,10%);
 @secondary_case:    @secondary_line * 0.9;
 
 @standard_line:     @land * 0.85;
-@standard_fill:     #9c9c9c;
+@standard_fill:     #B0B0B0;
 @standard_case:     @land * 0.9;
 
 @pedestrian_line:   @standard_line;
-@pedestrian_fill:   #b5b5b5;
+@pedestrian_fill:   #D6D2C7;
 @pedestrian_case:   @land;
 
 @cycle_line:        @standard_line;
-@cycle_fill:        #b5b5b5;
+@cycle_fill:        #D6D2C7;
 @cycle_case:        @land;
 
-@rail_line:         #999;
-@rail_fill:         #9c9c9c;
+@rail_line:         #E3E3E3;
+@rail_fill:         #E3E3E3;
 @rail_case:         @land;
 
-@aeroway:           #ddd;
+@aeroway:           #8F9BA8;
 
 /* ================================================================== */
 /* BOUNDARY COLORS

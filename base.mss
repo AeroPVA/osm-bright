@@ -10,8 +10,8 @@
 /* LANDUSE & LANDCOVER
 /* ================================================================== */
 
-#land-low[zoom>=0][zoom<10],
-#land-high[zoom>=10] {
+#land-low[zoom>=0][zoom<10]
+#land-high[zoom>=0] {
   polygon-fill: @land;
   polygon-gamma: 0.75;
 }
@@ -42,10 +42,11 @@
 
 #landuse_overlays[type='nature_reserve'][zoom>6] {
   line-color: darken(@wooded,25%);
-  line-opacity:  0.3;
+  line-opacity:  0.4;
   line-dasharray: 1,1;
   polygon-fill: darken(@wooded,25%);
   polygon-opacity: 0.1;
+  [zoom<=6] { line-width: 0.3; }
   [zoom=7] { line-width: 0.4; }
   [zoom=8] { line-width: 0.6; }
   [zoom=9] { line-width: 0.8; }

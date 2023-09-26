@@ -10,7 +10,7 @@
 /* LANDUSE & LANDCOVER
 /* ================================================================== */
 
-#land-low[zoom>=0][zoom<10]
+#land-low[zoom>=0][zoom<10],
 #land-high[zoom>=0] {
   polygon-fill: @land;
   polygon-gamma: 0.75;

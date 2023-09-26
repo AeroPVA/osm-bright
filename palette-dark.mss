@@ -45,11 +45,11 @@ Map { font-directory: url(./fonts); }
 @park:              #1e6c62;
 @cemetery:          #1e6c62;
 @wooded:            #12353b;
-@agriculture:       #9f8606;
+@agriculture:       #7b6704;
 
 @building:          #808080;
-@hospital:          #e8c4c0;
-@school:            #e8c4c0;
+@hospital:          #83382f;
+@school:            #83382f;
 @sports:            #1e6c62;
 
 @residential:       @land * 0.98;

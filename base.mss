@@ -53,6 +53,20 @@
   [zoom=11] { line-width: 1.5; }
   [zoom>=12] { line-width: 2.0; }
 }
+
+#landuse_overlays[type='tundra'][zoom>=0] {
+  line-color: darken(@wooded,35%);
+  line-opacity:  0.4;
+  line-dasharray: 1,1;
+  polygon-fill: darken(@wooded,35%);
+  polygon-opacity: 0.1;
+  [zoom<=7] { line-width: 0.4; }
+  [zoom=8] { line-width: 0.6; }
+  [zoom=9] { line-width: 0.8; }
+  [zoom=10] { line-width: 1.0; }
+  [zoom=11] { line-width: 1.5; }
+  [zoom>=12] { line-width: 2.0; }
+}
  
 #landuse_overlays[type='wetland'][zoom>11] {
   [zoom>11][zoom<=14] { polygon-pattern-file:url(img/marsh-16.png); }

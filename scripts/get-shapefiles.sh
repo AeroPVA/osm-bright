@@ -34,6 +34,12 @@ if [ ! -s ne_10m_populated_places.zip ] ; then
 		curl_req -o ne_10m_populated_places.zip "https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_populated_places.zip"
 	fi
 fi
+if [ ! -s ne_10m_glaciated_areas.zip ] ; then
+	echo "Downloading ne_10m_glaciated_areas.zip"
+	if $WET_RUN ; then
+		curl_req -o ne_10m_glaciated_areas.zip "https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip"
+	fi
+fi
 
 if [ ! -s simplified-land-polygons-complete-3857/simplified_land_polygons.shp  ] ; then
 	echo "Unzipping simplified-land-polygons-complete-3857.zip"
@@ -56,5 +62,13 @@ if [ ! -s ne_10m_populated_places.shp ] ; then
 	if $WET_RUN ; then
 		unzip ne_10m_populated_places.zip
 		shapeindex ne_10m_populated_places.shp
+	fi
+fi
+
+if [ ! -s ne_10m_glaciated_areas.shp ] ; then
+	echo "Unzip ne_10m_glaciated_areas.zip"
+	if $WET_RUN ; then
+		unzip ne_10m_glaciated_areas.zip
+		shapeindex ne_10m_glaciated_areas.shp
 	fi
 fi

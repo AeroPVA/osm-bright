@@ -10,14 +10,13 @@
 /* LANDUSE & LANDCOVER
 /* ================================================================== */
 
-/* #land-low[zoom>=0][zoom<10], TODO: TEST, cause we want more detailed map */
 #land-high[zoom>=0] {
   polygon-fill: @land;
-  polygon-gamma: 0.75;
+  polygon-gamma: 1.0;
 }
 #land-glaciar[zoom>=0] {
   polygon-fill: @glaciar;
-  polygon-gamma: 0.75;
+  polygon-gamma: 1.0;
 }
 
 #landuse_gen0[zoom>3][zoom<=9], 

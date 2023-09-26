@@ -25,11 +25,7 @@
   [type='sand']          { polygon-fill: @sanded; }
   [type='coastline']     { polygon-fill: @beached; }
   [type='beach']         { polygon-fill: @beached; }
-  [type='bare_rock']     { polygon-fill: @sanded; }
-  [type='scree']         { polygon-fill: @sanded; }
-  [type='blockfield']    { polygon-fill: @beached; }
   [type='farmland']      { polygon-fill: @agriculture; } 
-  [type='heath']         { polygon-fill: @sanded; } 
   [type='glacier']       { polygon-fill: @glaciar; }
   [type='cemetery']      { polygon-fill: @cemetery; }
   [type='college']       { polygon-fill: @school; }
@@ -52,7 +48,6 @@
   [type='wood']          { polygon-fill: @wooded; }
   [type='meadow']        { polygon-fill: @parking; }
   [type='grassland']     { polygon-fill: @grass; }
-  [type='tundra']        { polygon-fill: @grass; }
 }
 
 #landuse_overlays[type='nature_reserve'][zoom>=0] {

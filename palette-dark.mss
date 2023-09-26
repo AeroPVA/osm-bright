@@ -40,11 +40,11 @@ Map { font-directory: url(./fonts); }
 @land:              #1a2636;
 @glaciar:           #495877;
 @water:             #07080c;
-@grass:             #102f34;
+@grass:             #18474e;
 @beach:             #3c4d61;
 @park:              #2db98a;
 @cemetery:          #2db98a;
-@wooded:            #0F2732;
+@wooded:            #12353b;
 @agriculture:       #9f8606;
 
 @building:          #808080;

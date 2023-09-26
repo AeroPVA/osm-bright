@@ -42,15 +42,15 @@ Map { font-directory: url(./fonts); }
 @water:             #07080c;
 @grass:             #18474e;
 @beach:             #3c4d61;
-@park:              #1e5962;
-@cemetery:          #1e5962;
+@park:              #1e6c62;
+@cemetery:          #1e6c62;
 @wooded:            #12353b;
 @agriculture:       #9f8606;
 
 @building:          #808080;
 @hospital:          #e8c4c0;
 @school:            #e8c4c0;
-@sports:            #23906b;
+@sports:            #1e6c62;
 
 @residential:       @land * 0.98;
 @commercial:        @land * 0.97;

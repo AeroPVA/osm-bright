@@ -10,11 +10,11 @@
 /* LANDUSE & LANDCOVER
 /* ================================================================== */
 
-#land-high[zoom>=6] {
+#land-high[zoom>=0] {
   polygon-fill: @land;
   polygon-gamma: 1.0;
 }
-#land-glaciar[zoom>=6] {
+#land-glaciar[zoom>=0] {
   polygon-fill: @glaciar;
   polygon-gamma: 1.0;
 }

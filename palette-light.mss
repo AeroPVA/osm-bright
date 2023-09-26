@@ -38,11 +38,11 @@ Map { font-directory: url(./fonts); }
 /* ================================================================== */
 
 @land:              #79d5b6;
-@sandColor:         #ebe9e6;
+@sanded:            #ebe9e6;
+@beached:           #f7eccf;
 @glaciar:           #ffffff;
 @water:             #abebff;
 @grass:             #94e5ca;
-@beach:             #f7eccf;
 @park:              #86d5bd;
 @cemetery:          #86d5bd;
 @wooded:            #78d5b6;

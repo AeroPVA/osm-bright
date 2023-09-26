@@ -23,9 +23,8 @@
 #landuse_gen1[zoom>9][zoom<=12],
 #landuse[zoom>12] {
   [type='sand']          { polygon-fill: @sanded; }
-  [type='coastline']     { polygon-fill: @beached; }
-  [type='beach']         { polygon-fill: @beached; }
-  [type='farmland']      { polygon-fill: @agriculture; } 
+  [type='coastline']     { polygon-fill: @sanded; }
+  [type='beach']         { polygon-fill: @sanded; }
   [type='glacier']       { polygon-fill: @glaciar; }
   [type='cemetery']      { polygon-fill: @cemetery; }
   [type='college']       { polygon-fill: @school; }

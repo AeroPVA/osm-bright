@@ -19,8 +19,8 @@
   polygon-gamma: 1.0;
 }
 
-#landuse_gen0[zoom>0][zoom<=9], 
-#landuse_gen1[zoom>0][zoom<=12],
+#landuse_gen0[zoom>=3][zoom<=9], 
+#landuse_gen1[zoom>9][zoom<=12],
 #landuse[zoom>12] {
   [type='glacier']       { polygon-fill: @glaciar; }
   [type='cemetery']      { polygon-fill: @cemetery; }

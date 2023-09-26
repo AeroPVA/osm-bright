@@ -10,13 +10,17 @@
 /* LANDUSE & LANDCOVER
 /* ================================================================== */
 
-#land-low[zoom>=0][zoom<10],
+/* #land-low[zoom>=0][zoom<10], TODO: TEST, cause we want more detailed map */
 #land-high[zoom>=0] {
   polygon-fill: @land;
   polygon-gamma: 0.75;
 }
+#land-glaciar[zoom>=0] {
+  polygon-fill: @glaciar;
+  polygon-gamma: 0.75;
+}
 
-#landuse_gen0[zoom>3][zoom<=9],
+#landuse_gen0[zoom>3][zoom<=9], 
 #landuse_gen1[zoom>9][zoom<=12],
 #landuse[zoom>12] {
   [type='cemetery']      { polygon-fill: @cemetery; }

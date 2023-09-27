@@ -65,9 +65,7 @@
   [type='common']::natural        { polygon-fill: @park; }
   [type='park']::natural          { polygon-fill: @park; }
   [type='forest']::natural        { polygon-fill: @wooded; } 
-*/
   [type='wood']::natural          { polygon-fill: @wooded; }
-/*
   [type='tundra']::natural        { polygon-fill: @wooded; }
   [type='scrub']::natural         { polygon-fill: @wooded; }
   [type='fell']::natural          { polygon-fill: @wooded; }

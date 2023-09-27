@@ -107,7 +107,7 @@
 
 Map { background-color: @water; }
 
-#water_gen0[zoom>5][zoom<=9],
+#water_gen0[zoom>3][zoom<=9],
 #water_gen1[zoom>9][zoom<=12],
 #water[zoom>12] {
   polygon-fill: @water;

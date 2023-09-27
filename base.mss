@@ -54,6 +54,7 @@
   [type='school']        { polygon-fill: @school; }
   [type='meadow']        { polygon-fill: @parking; }
   [type='parking']       { polygon-fill: @parking; }
+/*
   [type='grass']::natural         { polygon-fill: @grass; }
   [type='grassland']::natural     { polygon-fill: @grass; }
   [type='heath']::natural         { polygon-fill: @grass; }
@@ -64,7 +65,9 @@
   [type='common']::natural        { polygon-fill: @park; }
   [type='park']::natural          { polygon-fill: @park; }
   [type='forest']::natural        { polygon-fill: @wooded; } 
+*/
   [type='wood']::natural          { polygon-fill: @wooded; }
+/*
   [type='tundra']::natural        { polygon-fill: @wooded; }
   [type='scrub']::natural         { polygon-fill: @wooded; }
   [type='fell']::natural          { polygon-fill: @wooded; }
@@ -72,6 +75,7 @@
   [type='orchard']::natural       { polygon-fill: @wooded; }
   [type='mangrove']::natural      { polygon-fill: @wooded; } 
   [type='wetland']::natural       { polygon-fill: darken(@wooded,10%); } 
+*/
 } 
 
 #landuse_overlays[type='nature_reserve'][zoom>=0] {

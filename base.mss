@@ -22,27 +22,6 @@
 #landuse_gen0[zoom>=3][zoom<=9], 
 #landuse_gen1[zoom>9][zoom<=12],
 #landuse[zoom>12] {
-  [type='glacier']       { polygon-fill: @glaciar; }
-  [type='cemetery']      { polygon-fill: @cemetery; }
-  [type='hospital']      { polygon-fill: @hospital; }
-  [type='industrial']    { polygon-fill: @industrial; }
-  [type='commercial']    { polygon-fill: @industrial; }
-  [type='pedestrian']    { polygon-fill: @pedestrian_fill; }
-  [type='residential']   { polygon-fill: @residential; }
-  [type='sports_center'] { polygon-fill: @sports; }
-  [type='stadium']       { polygon-fill: @sports; }
-  [type='pitch']         { polygon-fill: @sports; }
-  [type='golf_course']   { polygon-fill: @sports; }
-  [type='college']       { polygon-fill: @school; }
-  [type='university']    { polygon-fill: @school; }
-  [type='school']        { polygon-fill: @school; }
-  [type='meadow']        { polygon-fill: @parking; }
-  [type='parking']       { polygon-fill: @parking; }
-} 
-
-#natural_gen0[zoom>=3][zoom<=9], 
-#natural_gen1[zoom>9][zoom<=12],
-#natural[zoom>12] {
   [type='sand']          { polygon-fill: @sanded; }
   [type='coastline']     { polygon-fill: @sanded; }
   [type='beach']         { polygon-fill: @sanded; }
@@ -60,6 +39,21 @@
   [type='landfill']      { polygon-fill: @rocked; }
   [type='ridge']         { polygon-fill: @rocked; }
   [type='glacier']       { polygon-fill: @glaciar; }
+  [type='cemetery']      { polygon-fill: @cemetery; }
+  [type='hospital']      { polygon-fill: @hospital; }
+  [type='industrial']    { polygon-fill: @industrial; }
+  [type='commercial']    { polygon-fill: @industrial; }
+  [type='pedestrian']    { polygon-fill: @pedestrian_fill; }
+  [type='residential']   { polygon-fill: @residential; }
+  [type='sports_center'] { polygon-fill: @sports; }
+  [type='stadium']       { polygon-fill: @sports; }
+  [type='pitch']         { polygon-fill: @sports; }
+  [type='golf_course']   { polygon-fill: @sports; }
+  [type='college']       { polygon-fill: @school; }
+  [type='university']    { polygon-fill: @school; }
+  [type='school']        { polygon-fill: @school; }
+  [type='meadow']        { polygon-fill: @parking; }
+  [type='parking']       { polygon-fill: @parking; }
   [type='grass']         { polygon-fill: @grass; }
   [type='grassland']     { polygon-fill: @grass; }
   [type='heath']         { polygon-fill: @grass; }

@@ -348,12 +348,12 @@ come in as well.
 /* AEROWAYS
 /* ================================================================== */
 
-#aeroway[zoom>9] {
+#aeroway[zoom>8] {
   line-color:@aeroway;
   line-cap:butt;
   line-join:miter;
   [type='runway'] {
-    [zoom=10]{ line-width:1; }
+    [zoom>=10]{ line-width:1; }
     [zoom=11]{ line-width:2; }
     [zoom=12]{ line-width:3; }
     [zoom=13]{ line-width:5; }

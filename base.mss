@@ -22,22 +22,22 @@
 #landuse_gen0[zoom>=3][zoom<=9], 
 #landuse_gen1[zoom>9][zoom<=12],
 #landuse[zoom>12] {
-  [type='sand']::natural          { polygon-fill: @sanded; }
-  [type='coastline']::natural     { polygon-fill: @sanded; }
-  [type='beach']::natural         { polygon-fill: @sanded; }
-  [type='savanna']::natural       { polygon-fill: @sanded; } 
-  [type='puszta']::natural        { polygon-fill: @sanded; }
-  [type='tussock']::natural       { polygon-fill: @sanded; }
-  [type='dune']::natural          { polygon-fill: darken(@sanded,35%); }
-  [type='grey_dune']::natural     { polygon-fill: darken(@sanded,25%); }
-  [type='steppe']::natural        { polygon-fill: darken(@sanded,30%); }
-  [type='desert']::natural        { polygon-fill: @sanded; }
-  [type='blockfield']::natural    { polygon-fill: @rocked; }
-  [type='scree']::natural         { polygon-fill: @rocked; }
-  [type='bare_rock']::natural     { polygon-fill: @rocked; }
-  [type='cliff']::natural         { polygon-fill: @rocked; }
-  [type='landfill']::natural      { polygon-fill: @rocked; }
-  [type='ridge']::natural         { polygon-fill: @rocked; }
+  [type='sand']          { polygon-fill: @sanded; }
+  [type='coastline']     { polygon-fill: @sanded; }
+  [type='beach']         { polygon-fill: @sanded; }
+  [type='savanna']       { polygon-fill: @sanded; } 
+  [type='puszta']        { polygon-fill: @sanded; }
+  [type='tussock']       { polygon-fill: @sanded; }
+  [type='dune']          { polygon-fill: darken(@sanded,35%); }
+  [type='grey_dune']     { polygon-fill: darken(@sanded,25%); }
+  [type='steppe']        { polygon-fill: darken(@sanded,30%); }
+  [type='desert']        { polygon-fill: @sanded; }
+  [type='blockfield']    { polygon-fill: @rocked; }
+  [type='scree']         { polygon-fill: @rocked; }
+  [type='bare_rock']     { polygon-fill: @rocked; }
+  [type='cliff']         { polygon-fill: @rocked; }
+  [type='landfill']      { polygon-fill: @rocked; }
+  [type='ridge']         { polygon-fill: @rocked; }
   [type='glacier']       { polygon-fill: @glaciar; }
   [type='cemetery']      { polygon-fill: @cemetery; }
   [type='hospital']      { polygon-fill: @hospital; }
@@ -54,35 +54,34 @@
   [type='school']        { polygon-fill: @school; }
   [type='meadow']        { polygon-fill: @parking; }
   [type='parking']       { polygon-fill: @parking; }
-/*
-  [type='grass']::natural         { polygon-fill: @grass; }
-  [type='grassland']::natural     { polygon-fill: @grass; }
-  [type='heath']::natural         { polygon-fill: @grass; }
-  [type='valley']::natural        { polygon-fill: @grass; } 
-  [type='prairie']::natural       { polygon-fill: @grass; } 
-  [type='dehesa']::natural        { polygon-fill: @grass; }
-  [type='pampas']::natural        { polygon-fill: @grass; }
-  [type='common']::natural        { polygon-fill: @park; }
-  [type='park']::natural          { polygon-fill: @park; }
-  [type='forest']::natural        { polygon-fill: @wooded; } 
-  [type='wood']::natural          { polygon-fill: @wooded; }
-  [type='tundra']::natural        { polygon-fill: @wooded; }
-  [type='scrub']::natural         { polygon-fill: @wooded; }
-  [type='fell']::natural          { polygon-fill: @wooded; }
-  [type='oak_savanna']::natural   { polygon-fill: @wooded; }
-  [type='orchard']::natural       { polygon-fill: @wooded; }
-  [type='mangrove']::natural      { polygon-fill: @wooded; } 
-  [type='wetland']::natural       { polygon-fill: darken(@wooded,10%); } 
-*/
+  [type='grass']         { polygon-fill: @grass; }
+  [type='grassland']     { polygon-fill: @grass; }
+  [type='heath']         { polygon-fill: @grass; }
+  [type='valley']        { polygon-fill: @grass; } 
+  [type='prairie']       { polygon-fill: @grass; } 
+  [type='dehesa']        { polygon-fill: @grass; }
+  [type='pampas']        { polygon-fill: @grass; }
+  [type='common']        { polygon-fill: @park; }
+  [type='park']          { polygon-fill: @park; }
+  [type='forest']        { polygon-fill: @wooded; } 
+  [type='wood']          { polygon-fill: @wooded; }
+  [type='tundra']        { polygon-fill: @wooded; }
+  [type='scrub']         { polygon-fill: @wooded; }
+  [type='fell']          { polygon-fill: @wooded; }
+  [type='oak_savanna']   { polygon-fill: @wooded; }
+  [type='orchard']       { polygon-fill: @wooded; }
+  [type='mangrove']      { polygon-fill: @wooded; } 
+  [type='wetland']       { polygon-fill: darken(@wooded,10%); } 
 } 
 
-#landuse_overlays[type='nature_reserve'][zoom>=0] {
+#landuse_overlays[type='nature_reserve'][zoom>=3] {
   line-color: darken(@wooded,25%);
   line-opacity:  0.4;
   line-dasharray: 1,1;
   polygon-fill: darken(@wooded,25%);
-  polygon-opacity: 0.1;
-  [zoom<=7] { line-width: 0.4; }
+  polygon-opacity: 0.5;
+  [zoom>=3] { line-width: 0.2; }
+  [zoom=7] { line-width: 0.4; }
   [zoom=8] { line-width: 0.6; }
   [zoom=9] { line-width: 0.8; }
   [zoom=10] { line-width: 1.0; }
@@ -105,12 +104,12 @@
 // At the highest zoom levels, render buildings in fancy pseudo-3D.
 // Ordering polygons by their Y-position is necessary for this effect
 // so we use a separate layer that does this for us.
-#buildings[zoom>=17][type != 'hedge'] {
+#buildings[zoom>=14][type != 'hedge'] {
   building-fill:@building;
   building-height:1.25;
 }
 
-#buildings[zoom>=17][type = 'hedge'] {
+#buildings[zoom>=14][type = 'hedge'] {
   building-fill:@wooded;
   building-height:1.25;
 }
@@ -184,19 +183,6 @@ Map { background-color: @water; }
     [zoom=19]{ line-width: 1; }
     [zoom>19]{ line-width: 1.5; }
   }
-}
-
-/* ================================================================== */
-/* ADMINISTRATIVE BOUNDARIES
-/* ================================================================== */
-
-
-#admin[admin_level='2'][zoom>1] {
-  line-color:@admin_2;
-  line-width:0.0;
-  [zoom=2] { line-opacity: 0.25; }
-  [zoom=3] { line-opacity: 0.3; }
-  [zoom=4] { line-opacity: 0.4; }
 }
 
 /* ================================================================== */

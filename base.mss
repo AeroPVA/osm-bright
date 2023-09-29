@@ -20,7 +20,7 @@
   polygon-gamma: 1.0;
 }
 
-#landuse_gen0[zoom>=3][zoom<=9] {
+#landuse_gen0[zoom>=3][zoom<=7] {
   [type='sand']          { polygon-fill: @sanded; }
   [type='coastline']     { polygon-fill: @sanded; }
   [type='beach']         { polygon-fill: @sanded; }
@@ -65,7 +65,7 @@
   [type='wetland']       { polygon-fill: darken(@wooded,10%); } 
 }
 
-#landuse_gen1[zoom>9][zoom<=12] {
+#landuse_gen1[zoom>7][zoom<=10] {
   [type='sand']          { polygon-fill: @sanded; }
   [type='coastline']     { polygon-fill: @sanded; }
   [type='beach']         { polygon-fill: @sanded; }
@@ -110,7 +110,7 @@
   [type='wetland']       { polygon-fill: darken(@wooded,10%); } 
 }
 
-#landuse[zoom>12] {
+#landuse[zoom>10] {
   [type='sand']          { polygon-fill: @sanded; }
   [type='coastline']     { polygon-fill: @sanded; }
   [type='beach']         { polygon-fill: @sanded; }

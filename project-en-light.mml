@@ -47,6 +47,26 @@
         "dbname": "gis", 
         "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34", 
         "geometry_field": "way", 
+        "id": "glacier_area", 
+        "key_field": "", 
+        "project": "osm-bright-imposm", 
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over", 
+        "table": "( SELECT way, way_area AS area, COALESCE(\"natural\") IN ('glacier')\n AS type\n  FROM planet_osm_polygon\n  ORDER BY way_area DESC\n) AS data", 
+        "type": "postgis"
+      }, 
+      "class": "", 
+      "geometry": "multipolygon", 
+      "id": "glacier_area", 
+      "name": "glacier_area", 
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over", 
+      "srs-name": "3857", 
+      "status": "on"
+    }, 
+    {
+      "Datasource": {
+        "dbname": "gis", 
+        "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34", 
+        "geometry_field": "way", 
         "id": "landuse_gen0", 
         "key_field": "", 
         "project": "osm-bright-imposm", 

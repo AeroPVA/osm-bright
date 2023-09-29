@@ -10,12 +10,13 @@
 /* LANDUSE & LANDCOVER
 /* ================================================================== */
 
-#land-high[zoom>=0] {
+#land-high[zoom>=3] {
   polygon-fill: @land;
   polygon-gamma: 1.0;
 }
-#land-glaciar[zoom>=0] {
-  polygon-fill: @glaciar;
+
+#land-glacier[zoom>=3] {
+  polygon-fill: @glacier;
   polygon-gamma: 1.0;
 }
 
@@ -26,13 +27,13 @@
   [type='savanna']       { polygon-fill: @sanded; } 
   [type='puszta']        { polygon-fill: @sanded; }
   [type='tussock']       { polygon-fill: @sanded; }
-  [type='dune']          { polygon-fill: darken(@sanded,35%); }
-  [type='grey_dune']     { polygon-fill: darken(@sanded,25%); }
-  [type='steppe']        { polygon-fill: darken(@sanded,30%); }
   [type='desert']        { polygon-fill: @sanded; }  
   [type='aridform']      { polygon-fill: darken(@sanded,10%); }  
   [type='arid_form']     { polygon-fill: darken(@sanded,10%); }
-
+  [type='grey_dune']     { polygon-fill: darken(@sanded,25%); }
+  [type='steppe']        { polygon-fill: darken(@sanded,30%); }
+  [type='dune']          { polygon-fill: darken(@sanded,35%); }
+  
   [type='blockfield']    { polygon-fill: @rocked; }
   [type='scree']         { polygon-fill: @rocked; }
   [type='bare_rock']     { polygon-fill: @rocked; }
@@ -40,7 +41,7 @@
   [type='landfill']      { polygon-fill: @rocked; }
   [type='ridge']         { polygon-fill: @rocked; }
 
-  [type='glacier']       { polygon-fill: @glaciar; }
+  [type='glacier']       { polygon-fill: @glacier; }
 
   [type='grass']         { polygon-fill: @grass; }
   [type='grassland']     { polygon-fill: @grass; }

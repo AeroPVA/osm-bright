@@ -41,7 +41,7 @@ Map { font-directory: url(./fonts); }
 @sanded:            #1b232e;
 @rocked:            #1b2330;
 @beached:           #3c4d61;
-@glaciar:           #495877;
+@glacier:           #495877;
 @water:             #07080c;
 @grass:             #18474e;
 @park:              #1e6c62;

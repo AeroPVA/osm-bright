@@ -170,21 +170,6 @@
   [type='wetland']       { polygon-fill: darken(@wooded,10%); } 
 } 
 
-#landuse_overlays[type='nature_reserve'][zoom>=3] {
-  line-color: darken(@wooded,25%);
-  line-opacity:  0.4;
-  line-dasharray: 1,1;
-  polygon-fill: darken(@wooded,25%);
-  polygon-opacity: 0.5;
-  [zoom>=3] { line-width: 0.2; }
-  [zoom=7] { line-width: 0.4; }
-  [zoom=8] { line-width: 0.6; }
-  [zoom=9] { line-width: 0.8; }
-  [zoom=10] { line-width: 1.0; }
-  [zoom=11] { line-width: 1.5; }
-  [zoom>=12] { line-width: 2.0; }
-}
-
 /* ---- BUILDINGS ---- */
 #buildings[zoom>=12][zoom<=16] {
   polygon-fill:@building;

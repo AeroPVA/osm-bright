@@ -86,7 +86,7 @@
   [type='landfill']      { polygon-fill: @rocked; }
   [type='ridge']         { polygon-fill: @rocked; }
 
-  [type='glacier']       { polygon-fill: @glaciar; }
+  [type='glacier']       { polygon-fill: @glacier; }
 
   [type='grass']         { polygon-fill: @grass; }
   [type='grassland']     { polygon-fill: @grass; }
@@ -131,7 +131,7 @@
   [type='landfill']      { polygon-fill: @rocked; }
   [type='ridge']         { polygon-fill: @rocked; }
 
-  [type='glacier']       { polygon-fill: @glaciar; }
+  [type='glacier']       { polygon-fill: @glacier; }
 
   [type='cemetery']      { polygon-fill: @cemetery; }
   [type='hospital']      { polygon-fill: @hospital; }

@@ -134,14 +134,14 @@ Map { font-directory: url(./fonts); }
 @road_text:         #eaeaea;
 @road_halo:         #424242;
 
-@other_text:        #F3F0F2;
+@other_text:        #e3eff4;
 @other_halo:        @place_halo;
 
-@locality_text:     #d7e4ea;
+@locality_text:     #e3eff4;
 @locality_halo:     @place_halo;
 
 /* Also used for other small places: hamlets, suburbs, localities */
-@village_text:      #88F3F0F28;
+@village_text:      #e3eff4;
 @village_halo:      @place_halo;
 
 /* ****************************************************************** */

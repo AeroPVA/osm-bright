@@ -272,6 +272,7 @@
     text-wrap-width:30;
     text-fill: @other_text;
     text-halo-fill: @other_halo;
+
     // Specific style overrides for different types of areas:
     [type='park'][zoom>=10] {
       text-face-name: @sans_lt_italic;
@@ -301,10 +302,13 @@
       text-halo-fill: @water_label_halo;
     }
   }
+
   [zoom=15][area>1600000],
   [zoom=16][area>80000],
   [zoom=17][area>20000],
   [zoom=18][area>5000] {
+    text-fill: @other_text;
+    text-halo-fill: @other_halo;
     text-name: "[name]";
     text-size: 13;
     text-wrap-width: 60;
@@ -314,12 +318,16 @@
   [zoom=16][area>1600000],
   [zoom=17][area>80000],
   [zoom=18][area>20000] {
+    text-fill: @other_text;
+    text-halo-fill: @other_halo;
     text-size: 15;
     text-character-spacing: 2;
     text-wrap-width: 120;
   }
   [zoom>=17][area>1600000],
   [zoom>=18][area>80000] {
+    text-fill: @other_text;
+    text-halo-fill: @other_halo;
     text-size: 20;
     text-character-spacing: 3;
     text-wrap-width: 180;

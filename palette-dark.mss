@@ -43,6 +43,7 @@ Map { font-directory: url(./fonts); }
 @beached:           #3c4d61;
 @glacier:           #495877;
 @water:             #07080c;
+@water_label:       #94a0b6; 
 @grass:             #18474e;
 @park:              #1e6c62;
 @cemetery:          #1e6c62;
@@ -112,7 +113,7 @@ Map { font-directory: url(./fonts); }
 
 /* We set up a default halo color for places so you can edit them all
    at once or override each individually. */
-@place_halo:              fadeout(#fff,34%);
+@place_halo:              #1e1f20;
 @country_halo_color:      #1e1f20;
 
 @country_text:      #d7e4ea;
@@ -127,10 +128,10 @@ Map { font-directory: url(./fonts); }
 @town_text:         #d7e4ea;
 @town_halo:         @country_halo_color;
 
-@poi_text:          #888;
+@poi_text:          #e1edf2;
 
-@road_text:         #777;
-@road_halo:         #fff;
+@road_text:         #eaeaea;
+@road_halo:         #424242;
 
 @other_text:        #F3F0F2;
 @other_halo:        @place_halo;

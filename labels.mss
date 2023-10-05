@@ -297,8 +297,8 @@
       text-halo-fill: lighten(@school, 10%);
     }
     [type='water'][zoom>=10] {
-      text-fill: @water * 0.6;
-      text-halo-fill: lighten(@water, 10%);
+      text-fill: @water_label * 0.6;
+      text-halo-fill: lighten(@water_label, 10%);
     }
   }
   [zoom=15][area>1600000],
@@ -347,8 +347,8 @@
 #waterway_label[type='stream'][zoom>=17] {
   text-name: '[name]';
   text-face-name: @sans_italic;
-  text-fill: @water * 0.75;
-  text-halo-fill: fadeout(lighten(@water,5%),25%);
+  text-fill: @water_label * 0.75;
+  text-halo-fill: fadeout(lighten(@water_label,5%),25%);
   text-halo-radius: 1;
   text-placement: line;
   text-min-distance: 400;

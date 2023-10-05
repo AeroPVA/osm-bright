@@ -43,7 +43,8 @@ Map { font-directory: url(./fonts); }
 @beached:           #f7eccf;
 @glacier:           #ffffff;
 @water:             #abebff;
-@water_label:       #abebff; 
+@water_label:       #abebff;
+@water_label_halo:  lighten(@water_label, 10%);
 @grass:             #94e5ca;
 @park:              #86d5bd;
 @cemetery:          #86d5bd;

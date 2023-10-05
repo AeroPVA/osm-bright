@@ -44,6 +44,7 @@ Map { font-directory: url(./fonts); }
 @glacier:           #495877;
 @water:             #07080c;
 @water_label:       #94a0b6; 
+@water_label_halo:  #07152f; 
 @grass:             #18474e;
 @park:              #1e6c62;
 @cemetery:          #1e6c62;

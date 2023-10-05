@@ -298,7 +298,7 @@
     }
     [type='water'][zoom>=10] {
       text-fill: @water_label * 0.6;
-      text-halo-fill: lighten(@water_label, 10%);
+      text-halo-fill: @water_label_halo;
     }
   }
   [zoom=15][area>1600000],
@@ -348,7 +348,7 @@
   text-name: '[name]';
   text-face-name: @sans_italic;
   text-fill: @water_label * 0.75;
-  text-halo-fill: fadeout(lighten(@water_label,5%),25%);
+  text-halo-fill: @water_label_halo;
   text-halo-radius: 1;
   text-placement: line;
   text-min-distance: 400;

@@ -270,8 +270,8 @@
     text-face-name:@sans;
     text-size: 11;
     text-wrap-width:30;
-    text-fill: #888;
-    text-halo-fill: #fff;
+    text-fill: @other_text;
+    text-halo-fill: @other_halo;
     // Specific style overrides for different types of areas:
     [type='park'][zoom>=10] {
       text-face-name: @sans_lt_italic;
